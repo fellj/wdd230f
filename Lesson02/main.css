@@ -1,0 +1,34 @@
+ /* HTML Selectors */
+
+
+    
+  body {
+    width: 950px;
+    margin: auto;
+    margin: 0;
+    font-family: "Helvetica", sans-serif;
+  }
+  
+  
+  footer {
+    background-color: rgb(132, 189, 140);
+    color: rgba(255, 255, 255, 255);
+    padding: 10px;
+    text-align: center;
+    /*border-radius: 12px;*/
+  }
+
+
+header {
+    
+    font-size: 20px;
+    background-color:rgb(132, 189, 140);
+    color: rgb(255, 255, 255, 255);
+    margin: auto;
+    padding: 1em;
+    text-align: center;
+    align-content: center;
+    margin: 0;
+    line-height: 1em;
+    
+}

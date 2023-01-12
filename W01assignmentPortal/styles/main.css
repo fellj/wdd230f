@@ -2,13 +2,10 @@
 
   /* HTML Selectors */
 
-#wrapper {
+body {
   width: 950px;
   margin: auto;
-}
-  
-body {
-  font-family: "Helvetica", sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 
@@ -33,6 +30,10 @@ header {
   border-radius: 12px
   
 
+}
+
+h1 {
+  font-family:"Inter Tight", sans-serif;
 }
 
 h2 {

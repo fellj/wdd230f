@@ -14,12 +14,11 @@ footer {
   color: white;
   padding: 10px;
   text-align: center;
-  border-radius: 12px;
+  
 }
 
 header {
-  display: flex;
-  font-size: 30px;
+  
   background-color:rgb(72, 111, 163);
   color: white;
   margin: auto;
@@ -27,20 +26,20 @@ header {
   text-align: center;
   justify-content: space-between;
   align-items: center;
-  border-radius: 12px
   
-
 }
 
 h1 {
+  
   font-family:"Inter Tight", sans-serif;
+  font-size: 1.5rem;
 }
 
 h2 {
   text-shadow: rgb(140, 148, 170) 1px 0 10px;
   border-bottom: 1px solid rgb(209, 205, 205);
   font-family: "FreeMono", monospace;
-  font-size: 50px;
+  font-size: 1rem;
 }
 
 
@@ -57,9 +56,9 @@ main ul li a:hover {
   font-size: 18px;
 }
 
-img {
-  width: 175px;
-  height: 250px;
+header img {
+  width: 200px;
+  height: auto;
   object-fit: cover;
   border-radius: 15px;
   

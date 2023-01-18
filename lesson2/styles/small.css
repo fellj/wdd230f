@@ -8,8 +8,8 @@
   
   
   footer {
-    background-color: rgb(132, 189, 140);
-    color: rgba(255, 255, 255, 255);
+    background-color: #84A59D;
+    color: #F7EDE2;
     padding: 10px;
     text-align: center;
     font-weight: 400;
@@ -22,7 +22,7 @@ header {
     font-size: 20px;
     /* background-color:rgb(132, 189, 140); */
     background-color: #84A59D;
-    color: rgb(255, 255, 255, 255);
+    color: #F7EDE2;
     margin: auto;
     padding: 1em;
     text-align: center;

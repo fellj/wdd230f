@@ -100,3 +100,16 @@ nav a:hover {
 	background-color: #ffa62B;
 	color: black;
 }
+img{
+    width: 100;
+}
+
+#headings {
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: 1.5em;
+}
+
+#copy {
+    font-family: 'Scope One', serif;
+    font-size: 1.5em;
+}

@@ -47,7 +47,7 @@
     align-content: center;
     justify-content: center;
     background-color:#16697A;
-    
+    color: white;
     margin: auto;
     padding: 0;
     text-align: center;
@@ -86,7 +86,7 @@
   main {
     border-left: .25px solid grey;
     border-right: .25px solid grey;
-    padding: 5em;
+    padding: 1em;
   }
 
   
@@ -196,18 +196,31 @@ img{
     justify-content: center;
 }
 
+main section {
+  height: 250px;
+  border: 1px solid grey;
+  background-color: #EDE7E3;
+  margin: 1em;
+  padding: .5em;
+  
+}
+
+main section div {
+  height: 90px;
+  border: 1px solid grey;
+  background-color: #EDE7E3;
+  margin: .75em;
+  padding: .5em
+}
 
 
-
-
-
- aside{
+/*  aside{
     text-decoration: none;
     font-family: 'Sofia Sans', sans-serif;
     font-size: 1rem;
     background-color: #82C0CC;
     color: black;
- }
+ } */
 
  .responsive li {
   display: block;

@@ -1,14 +1,14 @@
 // select the elements to manipulate (output to)
-const datefieldUK = document.querySelector("aside");
+// const datefieldUK = document.querySelector("aside");
 
 //current date logic
-const now = new Date();
+// const now = new Date();
 
-const fulldateUK = new Intl.DateTimeFormat("en-UK", {
-	dateStyle: "full"
-}).format(now);
+// const fulldateUK = new Intl.DateTimeFormat("en-UK", {
+// 	dateStyle: "full"
+// }).format(now);
 
-datefieldUK.innerHTML = `<em>${fulldateUK}</em>`;
+// datefieldUK.innerHTML = `<em>${fulldateUK}</em>`;
 
 //copyright year logic
 const year =  new Date().getFullYear();
@@ -28,3 +28,6 @@ function toggleMenu() {
 const hambutton = document.querySelector('#menu');
 
 hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false); */
+const date = new Date();
+const completeDate = new Intl.DateTimeFormat("en", { dateStyle: "full" }).format(date);
+document.querySelector("#date").innerText = completeDate;

@@ -1,3 +1,47 @@
+body {
+    width: 500px;
+    margin: 0 auto;
+  }
+  
+  p {
+    background-color: rgb(207, 232, 220);
+    border: 2px solid rgb(79, 185, 227);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+  }
+
+  /* 
+  RELATIVE
+  .positioned {
+    position: relative;
+    top: 30px;
+    left: 30px;
+  } */
+ /*  
+ ABSOLUTE
+ .positioned {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  } */
+ /*  
+ FIXED
+ .positioned {
+    position: fixed;
+    top: 30px;
+    left: 30px;
+  } */
+
+  /* .positioned {
+    position: sticky;
+    top: 30px;
+    left: 30px;
+  } */
+
+
+
+
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
 html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 

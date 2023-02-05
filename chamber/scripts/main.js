@@ -31,3 +31,18 @@ hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive'
 const date = new Date();
 const completeDate = new Intl.DateTimeFormat("en", { dateStyle: "full" }).format(date);
 document.querySelector("#date").innerText = completeDate;
+
+//get day of the week and display banner
+
+
+const bannerDay = date.getDay();
+
+	if(bannerDay == "1" || bannerDay == "2"){
+		document.querySelector(".bannerClose").addEventListener("click", function() {
+		this.closest(".banner").style.display = "none";
+}
+	
+);
+	}else {
+		document.querySelector(".banner").style.display = "none";
+	}

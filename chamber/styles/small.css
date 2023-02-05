@@ -5,6 +5,33 @@
 	box-sizing: border-box;
   
   }
+
+  .banner {
+    background-color: #ffa62B;
+
+  }
+
+  .bannerContent {
+    padding: 16px;
+    /* max-width: 1000px; */
+    margin:0 auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+
+  }
+  .bannerText {
+    flex-grow: 1;
+    line-height: 1.4;
+    justify-items: center;
+  }
+
+  .bannerClose{
+    background: none;
+    border: none;
+    cursor:pointer;
+  }
   
   body {
     font-size: 16px;
@@ -15,9 +42,13 @@
     border-color: #82C0CC;
 
   }
+  .heroImg{
+    width: 100%;
+    opacity: .4;
+  }
   
   
-    footer {
+  footer {
     background-color: #16697A;
     color: white;
     
@@ -83,11 +114,11 @@
   
   
 
-  main {
+  /* main {
     border-left: .25px solid grey;
     border-right: .25px solid grey;
     padding: 1em;
-  }
+  } */
 
   
   header img {
@@ -197,8 +228,8 @@ img{
 }
 
 main section {
-  height: 250px;
-  border: 1px solid grey;
+  /* height: 250px; */
+  /* border: 1px solid grey; */
   background-color: #EDE7E3;
   margin: 1em;
   padding: .5em;
@@ -206,21 +237,30 @@ main section {
 }
 
 main section div {
-  height: 90px;
-  border: 1px solid grey;
-  background-color: #EDE7E3;
-  margin: .75em;
-  padding: .5em
+  /* height: 90px; */
+  /* border: 1px solid grey; */
+  /* background-color: #EDE7E3; */
+  /* margin: .75em;
+  padding: .5em */
 }
 
+.heroDiv{
+  margin:0;
+  padding: 0;
+  border: none;
+}
 
-/*  aside{
-    text-decoration: none;
-    font-family: 'Sofia Sans', sans-serif;
-    font-size: 1rem;
-    background-color: #82C0CC;
-    color: black;
- } */
+.join {
+  position: absolute;
+	top: 250px;
+	right: 50px;
+	background: #ffa62B;
+  border:0;
+  cursor: pointer;
+  border: 1px solid rgba(0,0,0,.1);
+	padding: 1.5rem;
+
+  }
 
  .responsive li {
   display: block;
@@ -230,3 +270,22 @@ main section div {
  .responsive #menu::before {
 	content: "X";
  }
+
+ #date {
+  color: white;
+  font-family: 'Sofia Sans', sans-serif;
+  font-size: 1rem;
+ }
+
+ button{
+  border:none;
+  background-color: #ffa62B;
+  font-family: 'Sofia Sans', sans-serif;
+  font-weight: 900;
+  cursor: pointer;
+  
+ }
+ .button:hover {
+  background-color:#002ead;
+  transition: 0.7s;
+}

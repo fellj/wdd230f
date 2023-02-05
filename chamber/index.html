@@ -12,11 +12,21 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link href="https://fonts.googleapis.com/css2?family=Scope+One&family=Sofia+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     
   </head>
   <body>
-  
-
+  <div class="banner">
+    <div class="bannerContent">
+      <div class="bannerText">
+        <strong>🤝Come join us for the Chamber Meet & Greet Wednesday at 7:00pm</strong>
+      </div>
+      <button class="bannerClose" type="button">
+      <span class="material-symbols-outlined">
+        close
+      </span>
+    </div>
+  </div>
 <header>
   <picture>
     <img src="images/chamber-logo.jpg" alt="chamber logo">
@@ -44,6 +54,8 @@
   
       
   </header>
+  
+  
   <nav>
     <ul class ="navigation">
       <li><a href="#" onclick="toggleMenu()">&#9776;</a></li>
@@ -57,7 +69,15 @@
   </nav>
 
     <main>
-<section>Hero with site name & call to action</section>
+      <section class="heroDiv">
+        <div class="heroImgHolder">
+          <img class="heroImg" src="images/Galveston-Island-Hero.jpg" alt="Galveston Pleasure Pier image">
+          <section class="join">
+            <button onclick="window.location.href='#';">JOIN NOW</button>
+          </section>
+
+        </div>
+      </section>
 <section>Event</section>
 <section>Weather</section>
 <section>News Release</section>

@@ -8,7 +8,6 @@
 
   .banner {
     background-color: #ffa62B;
-
   }
 
   .bannerContent {
@@ -122,10 +121,9 @@
 
   
   header img {
-    margin:1px;
+    margin:10px;
     width: 100%;
     height: auto;
-    
     border-radius: 15px;
    
   }
@@ -136,8 +134,7 @@
   }
 
   .headings h1 {
-    font-size: 1.6rem;
-   
+    font-size: 1.6rem;  
     font-family: 'Sofia Sans', sans-serif;
     color: white;
   }
@@ -149,11 +146,11 @@
 
   .fa {
     display: flex;
-    flex-direction: column;
-    margin: 0;
+    flex-direction: row;
+    margin: 1px;
     padding: 10px;
     font-size: 30px;
-    width: 50px;
+    /* width: 100%; */
     text-align: center;
     text-decoration: none;
   }
@@ -177,9 +174,6 @@ nav {
 	flex-direction: column;
   font-family: 'Sofia Sans', sans-serif;
 	background-color: #82C0CC;
-	
-  
-
 }
 
 .navigation{
@@ -228,26 +222,20 @@ img{
 }
 
 main section {
-  /* height: 250px; */
-  /* border: 1px solid grey; */
+ 
   background-color: #EDE7E3;
   margin: 1em;
   padding: .5em;
   
 }
 
-main section div {
-  /* height: 90px; */
-  /* border: 1px solid grey; */
-  /* background-color: #EDE7E3; */
-  /* margin: .75em;
-  padding: .5em */
-}
+
 
 .heroDiv{
   margin:0;
   padding: 0;
   border: none;
+  max-height: 100%;
 }
 
 .join {
@@ -259,8 +247,53 @@ main section div {
   cursor: pointer;
   border: 1px solid rgba(0,0,0,.1);
 	padding: 1.5rem;
-
   }
+
+  #spotlights div {
+    width: auto;
+    max-width: 100%;
+    background-color: #489FB5;
+    padding: 1em;
+    margin:1em;
+    height: auto;
+    
+  }
+
+  .picdiv{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin:0;
+    padding: 0;
+  }
+
+
+  #spotlights h2, h3{
+    color: black;
+    justify-items: center;
+    align-items: center;
+  }
+
+  #news, #weather, #event {
+    margin: 1em;
+    color: black;
+    background-color: #489FB5;
+    padding: 1em;
+    width: auto; 
+  }
+  
+
+
+
+  #spotlights :nth-child(3){
+    display: none;
+  }
+  
+  #join {
+    display: none;
+  }
+  
+
 
  .responsive li {
   display: block;

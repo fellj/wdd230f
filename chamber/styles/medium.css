@@ -1,21 +1,11 @@
 @media screen and (min-width: 32.5em) {
 
-    .navigation {
-        display: flex;
-        
-    }
-    .navigation li:first-child{
-        display: none;
-    }
-
-    .navigation li{
-        display: block;
-        flex: 1 1 100%;
-    }
+    
 
     header {
         flex: 1 1 100%;
-        justify-content: space-between;
+        justify-content: space-around;
+        /* justify-content: space-between; */
     }
     header img{
         width: 150px;
@@ -26,7 +16,71 @@
     .headings h1 {
         font-size: 2rem;
     }
+    hero img {
+        position: relative;
+    }
+main{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+}
+#join{
+    margin: 1em;
+    color: black;
+    background-color: #489FB5;
+    padding: 1em;
+    width: auto; 
+  }
+/* .spotlight-events{
+    display: flex;
+    flex-direction: row;
+} */
+  #spotlights {
+    display: flex;
+    flex-direction: row;
+    flex:1 1 100%;
+    justify-content: center;
+    
+  }
+  .spotlight1 .spotlight2 {
+    flex: 1 1 100%;
+    width: 50%;
+  }
+    
+     #news #weather {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
 
+    /*
+    .boxes h2, h3{
+        
+        color: white;
+        justify-items: center;
+        align-items: center;
+
+      }
+   
+        
+        
+    
+      
+    #spotlights {
+        width: 50%;
+        flex-direction: row;
+        
+    }
+    #spotlight :nth-child(3) {
+        display: flex;
+    } */
+
+    
+    #join{
+        width: 100%;
+        display: block;
+        
+    }
     footer {
         display: grid;
         gap: 10px;

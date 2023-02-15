@@ -38,11 +38,14 @@ document.querySelector("#date").innerText = completeDate;
 const bannerDay = date.getDay();
 
 	if(bannerDay == "1" || bannerDay == "2"){
+		document.querySelector(".banner").style.display = "flex";
+	
+
 		document.querySelector(".bannerClose").addEventListener("click", function() {
 		this.closest(".banner").style.display = "none";
 }
 	
 );
-	}else {
-		document.querySelector(".banner").style.display = "none";
+	/* }else {
+		document.querySelector(".banner").style.display = "none"; */
 	}

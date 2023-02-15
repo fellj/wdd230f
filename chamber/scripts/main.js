@@ -41,11 +41,9 @@ const bannerDay = date.getDay();
 		document.querySelector(".banner").style.display = "flex";
 	
 
-		document.querySelector(".bannerClose").addEventListener("click", function() {
-		this.closest(".banner").style.display = "none";
+		
 }
 	
-);
-	/* }else {
-		document.querySelector(".banner").style.display = "none"; */
-	}
+function hideAnnouncement(){
+	document.querySelector(".banner").style.display = "none";
+}

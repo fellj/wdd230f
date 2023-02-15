@@ -323,3 +323,6 @@ main section {
   background-color:#002ead;
   transition: 0.7s;
 }
+.bannerClose:hover{
+  transform: scale(1.1);
+}

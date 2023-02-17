@@ -39,8 +39,6 @@ const bannerDay = date.getDay();
 
 	if(bannerDay == "1" || bannerDay == "2"){
 		document.querySelector(".banner").style.display = "flex";
-	
-
 		
 }
 	

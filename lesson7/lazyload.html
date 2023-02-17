@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progressive Loading of Images and Placeholder</title>
+    <meta name="description" content="Lazy Loading Assignment Week 7 Assignment BYU-I WDD220 ">
+    <meta name="author" content="Lisa Fell">
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Scope+One&family=Sofia+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+      <h1>Progressive Loading of Images</h1>
+    </header>
+      
+    
+    <main>
+      <picture>
+        <img 
+        src="images/placeholder300x400.png" 
+        alt="kitten"
+        data-src="http://placekitten.com/300/400">
+      </picture>
+
+      <picture>
+        <img
+        src="images/placeholder300x400.png"
+        alt="random img2"
+        data-src="http://picsum.photos/300/400">
+      </picture>
+
+      <picture>
+        <img 
+        src="images/placeholder300x400.png"
+        alt="random img3"
+        data-src="https://placeimg.com/300/400/any">
+      </picture>
+
+      <picture>
+        <img 
+        src="images/placeholder300x400.png"
+        alt="random img4"
+        data-src="https://loremflickr.com/300/400">
+      </picture>
+
+      <picture>
+        <img
+        src="images/placeholder300x400"
+        alt="bacon picture"
+        data-src="https://baconmockup.com/300/400">
+      </picture>
+
+      <picture>
+        <img 
+        src="images/placeholder300x400.png"
+        alt="bear image"
+        data-src="https://placebear.com/300/400">
+      </picture>
+
+      
+      
+    </main>
+    
+    <script src="scripts/main.js"></script>
+    
+  </body>
+</html>

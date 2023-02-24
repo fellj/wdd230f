@@ -1,5 +1,6 @@
-@media screen and (min-width: 32.5em) {
-
+/* @media screen and (min-width: 32.5em) { */
+/* @media screen and (min-width: 35rem) { */
+@media only screen and (min-width: 35rem) {
     
 
     header {
@@ -16,8 +17,8 @@
     .headings h1 {
         font-size: 2rem;
     }
-    hero img {
-        position: relative;
+    .heroImg {
+        position: fixed;
     }
 main{
     display: flex;

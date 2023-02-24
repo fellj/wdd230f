@@ -1,0 +1,334 @@
+  /* HTML Selectors */
+  * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  
+  }
+
+  .banner {
+    background-color: #ffa62B;
+  }
+
+  .bannerContent {
+    padding: 16px;
+    /* max-width: 1000px; */
+    margin:0 auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+
+  }
+  .bannerText {
+    flex-grow: 1;
+    line-height: 1.4;
+    justify-items: center;
+  }
+
+  .bannerClose{
+    background: none;
+    border: none;
+    cursor:pointer;
+  }
+  
+  body {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    font-family: 'Scope One', serif;
+    background-color:#EDE7E3;
+    border-color: #82C0CC;
+
+  }
+  .heroImg{
+    max-width: 100%;
+    height: auto;
+    width:
+    opacity: .4;
+  }
+  
+  
+  footer {
+    background-color: #16697A;
+    color: white;
+    
+    padding: 10px;
+    text-align: center;
+    
+    
+  } 
+
+  footer img {
+    height: 75px;
+    width: auto;
+    border-radius: 15%;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  #footer3{
+
+    border-top: 1px solid grey;
+  }
+  
+  header {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color:#16697A;
+    color: white;
+    margin: auto;
+    padding: 0;
+    text-align: center;
+    
+   
+    
+  }
+
+  header section {
+    color: black;
+    padding: 5px;
+    margin: 5px;
+    border: 1px;
+    border-color: black;
+  }
+
+ 
+  
+  h1, h2 {
+    
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: 1rem;
+  }
+  
+  
+
+  /* main {
+    border-left: .25px solid grey;
+    border-right: .25px solid grey;
+    padding: 1em;
+  } */
+
+  
+  header img {
+    margin:10px;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+   
+  }
+
+  .headings{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .headings h1 {
+    font-size: 1.6rem;  
+    font-family: 'Sofia Sans', sans-serif;
+    color: white;
+  }
+
+ .headings div {
+  padding: 10px;
+ }
+  
+
+  .fa {
+    display: flex;
+    flex-direction: row;
+    margin: 1px;
+    padding: 10px;
+    font-size: 30px;
+    /* width: 100%; */
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-facebook {
+    color: white;
+  }
+
+  .fa-twitter {
+    color: white;
+  }
+
+
+
+nav {
+	display: block;
+	flex-direction: column;
+  font-family: 'Sofia Sans', sans-serif;
+	background-color: #82C0CC;
+}
+
+.navigation{
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+
+.navigation li{
+  display: none;
+}
+
+.navigation li:first-child{
+  display: block;
+}
+
+
+
+.navigation a {
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 5px;
+	text-decoration: none;
+	font-size: 1.25rem;
+}
+
+#menu::before{
+  content: "≡";
+}
+
+#menu::after{
+  content: "X";
+}
+
+nav a:hover {
+	background-color: #ffa62B;
+	color: black;
+}
+
+img{
+    /* width: 100%; */
+    /* width: 1000px; */
+    height: auto;
+    justify-content: center;
+}
+
+main section {
+ 
+  background-color: #EDE7E3;
+  margin: 1em;
+  padding: .5em;
+  
+}
+
+
+
+.heroDiv{
+  margin:0;
+  padding: 0;
+  border: none;
+  /* max-height: 100%; */
+  max-width: 100%;
+}
+
+.join {
+  position: absolute;
+	top: 250px;
+	right: 50px;
+	background: #ffa62B;
+  border:0;
+  cursor: pointer;
+  border: 1px solid rgba(0,0,0,.1);
+	padding: 1.5rem;
+  text-align: center;
+  }
+
+  #spotlights div {
+    width: auto;
+    max-width: 100%;
+    background-color: #489FB5;
+    padding: 1em;
+    margin:1em;
+    height: auto;
+    
+  }
+
+  .picdiv{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin:0;
+    padding: 0;
+  }
+
+
+  #spotlights h2, h3{
+    color: black;
+    justify-items: center;
+    align-items: center;
+  }
+
+  #news, #weather, #event {
+    margin: 1em;
+    color: black;
+    background-color: #489FB5;
+    padding: 1em;
+    width: auto; 
+  }
+  
+#weather h3 {
+  font-size: 45px;
+}
+
+
+  #spotlights :nth-child(3){
+    display: none;
+  }
+  
+  #join {
+    display: none;
+  }
+  
+
+
+ .responsive li {
+  display: block;
+  
+ }
+
+ .responsive #menu::before {
+	content: "X";
+ }
+
+ #date {
+  color: white;
+  font-family: 'Sofia Sans', sans-serif;
+  font-size: 1rem;
+ }
+
+ button{
+  border:none;
+  background-color: #ffa62B;
+  font-family: 'Sofia Sans', sans-serif;
+  font-weight: 900;
+  cursor: pointer;
+  
+ }
+ .button:hover {
+  background-color:#002ead;
+  transition: 0.7s;
+}
+.bannerClose:hover{
+  transform: scale(1.1);
+}

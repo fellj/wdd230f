@@ -17,9 +17,13 @@
     .headings h1 {
         font-size: 2rem;
     }
-    .heroImg {
+
+
+/*     .heroImg {
         position: fixed;
-    }
+    } */
+
+
 main{
     display: flex;
     flex-wrap: wrap;
@@ -32,6 +36,7 @@ main{
     padding: 1em;
     width: auto; 
   }
+
 /* .spotlight-events{
     display: flex;
     flex-direction: row;
@@ -54,28 +59,7 @@ main{
         align-items: center;
     }
 
-    /*
-    .boxes h2, h3{
-        
-        color: white;
-        justify-items: center;
-        align-items: center;
-
-      }
-   
-        
-        
     
-      
-    #spotlights {
-        width: 50%;
-        flex-direction: row;
-        
-    }
-    #spotlight :nth-child(3) {
-        display: flex;
-    } */
-
     
     #join{
         width: 100%;

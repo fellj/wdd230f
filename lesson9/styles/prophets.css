@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+body {
+  font-size: 16px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  margin: 50px;
+}
+
+header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 40px;
+}
+
+
+section {
+    background-color: #40798c;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #0b2027;
+}
+
+
+h1, h2, p {
+    color: #1f363d
+}
+
+
+section img {
+    max-width: 100%;
+    height: auto;
+}
+footer{
+    text-align: center;
+}
+

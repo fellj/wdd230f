@@ -1,5 +1,6 @@
 /* @media only screen and (min-width: 48em) { */
 @media only screen and (min-width: 64rem) {
+/* @media only screen and (min-width: 1000px) { */
 	nav a {
 		font-size: 1.3rem;
 	}

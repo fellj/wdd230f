@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 body {
-  font-size: 16px;
+  font-size: 18px;
   font-family: Roboto, Arial, Helvetica, sans-serif;
   margin: 50px;
 }
@@ -19,7 +19,7 @@ header {
 
 
 section {
-    background-color: #40798c;
+    background-color: #579AB2;
     padding: 20px;
     text-align: center;
     border: 1px solid #0b2027;
@@ -27,7 +27,7 @@ section {
 
 
 h1, h2, p {
-    color: #1f363d
+    color: black;
 }
 
 

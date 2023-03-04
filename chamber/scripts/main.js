@@ -45,3 +45,5 @@ const bannerDay = date.getDay();
 function hideAnnouncement(){
 	document.querySelector(".banner").style.display = "none";
 }
+
+

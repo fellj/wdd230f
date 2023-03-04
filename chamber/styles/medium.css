@@ -95,4 +95,10 @@ main{
         grid-row-start: 5;
         grid-column:  1/ span 10;
     }
+
+    /* discover page */
+    #discover img:hover {
+        opacity: 0.5;
+      }
+    
 }

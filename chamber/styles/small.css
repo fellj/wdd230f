@@ -47,15 +47,13 @@
     opacity: .4;
   } */
   
-  
+
+
   footer {
     background-color: #16697A;
     color: white;
-    
     padding: 10px;
     text-align: center;
-    
-    
   } 
 
   footer img {
@@ -69,7 +67,6 @@
     color: white;
   }
   #footer3{
-
     border-top: 1px solid grey;
   }
   
@@ -82,8 +79,6 @@
     margin: auto;
     padding: 0;
     text-align: center;
-    
-   
     
   }
 
@@ -106,6 +101,8 @@
   h2 {
     font-size: 2rem;
   }
+
+  
 
   h3 {
     font-family: 'Sofia Sans', sans-serif;
@@ -330,3 +327,26 @@ main section {
 .bannerClose:hover{
   transform: scale(1.1);
 }
+
+ /* discover page */
+
+ #discover{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  grid-column: 2/4;
+ }
+ #h2discover{
+  text-align: center;
+  grid-column: 2/4;
+  padding: 10px;
+  /* margin-top: 10px; */
+}
+
+ #discover img:hover {
+    opacity: 0.5;
+  }
+
+  
+ 

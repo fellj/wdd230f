@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Become a Member of the Galveston Chamber of Commerce</title>
+    <meta name="description" content="Information on how to become a member of the Galveston Chamber of Commerce">
+    <meta name="author" content="Lisa Fell">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Scope+One&family=Sofia+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+    
+  </head>
+  <body>
+    <div class="banner">
+      <div class="bannerContent">
+        <div class="bannerText">
+          <p>🤝Come join us for the Chamber Meet & Greet Wednesday at 7:00pm</p>
+        </div>
+        <button class="bannerClose" onclick="hideAnnouncement()"> ✖
+        </button>
+      </div>
+    </div>
+    <header>
+            <picture>
+              <img src="images/chamber-logo.webp" alt="chamber logo">
+            </picture>
+            <section class="headings">
+          
+              <h1>Galveston Chamber of Commerce</h1>
+          
+              <p id="date"></p>
+              
+            </section>
+              
+          <div class="fa">
+              
+               
+            <a href="https://facebook.com" class="fa fa-facebook" aria-hidden="true">
+              <span class="sr-only">Facebook</span>
+            </a>
+            <a href="https://twitter.com" class="fa fa-twitter" aria-hidden="true">
+              <span class="sr-only">Twitter</span>
+      
+            </a>
+          
+          
+              
+            </div>
+                
+        </header>
+            <nav>
+              <ul class ="navigation">
+                <li><a href="#" onclick="toggleMenu()">&#9776;</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="join.html">Become a Member</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="#">Weather</a></li>
+          
+              </ul>
+            </nav>
+           
+        <main id="join-main">
+            
+                <h2>Become a Member of the Galveston Chamber of Commerce</h2>
+                    <div id ="hidden-date" hidden></div> 
+       
+            
+                    
+            
+        <section id="wrapper">
+            <form id="form" method="get" action="thankyou.html">
+                <fieldset>
+                    <legend>Applicant Information</legend>
+                    <label class="applicant">First Name*<input type="text" name="firstName" required></label>
+                    <label class="applicant">Last Name*<input type="text" name="lastName" required></label>
+                    <label class="applicant">Business Name*<input type="text" name="business" required></label>
+                    <label class="applicant">Business Title<input type="text" name="appTitle" pattern="[a-zA-Z\s\-]{7,}"></label>
+                    <label class="applicant">Phone*<input type="tel" name="phone" placeholder="1235551234"></label>
+                    <label class="applicant">Email*<input type="email" name="email" placeholder="yourname@email.com" required></label>
+                    <label class="applicant">Website<input type="url" name="url" placeholder="www."></label>
+                </fieldset>
+    
+                <fieldset>
+                    <legend>Membership Options</legend>
+                    
+                    <label class="mem-option"><input type = "radio" name="membership" value="np" title="No membership fee for Non Profit Members"> Non Profit Membership </label>
+                    <label class="mem-option"><input type = "radio" name="membership" value="Bronze" title="Bronze"> Bronze Level</label>
+                    <label class="mem-option"><input type = "radio" name="membership" value="Silver" title="Silver"> Silver Level</label>
+                    <label class="mem-option"><input type = "radio" name="membership" value="Gold" title="Gold"> Gold Level</label>
+                </fieldset>
+
+                <fieldset id="moreInfo">
+                    <legend>More Information</legend>
+                    
+                    <label for="details">Business Details</label>
+                    <textarea id="details" name="details" rows="5" cols="38"></textarea>
+                  
+                </fieldset>
+                
+                <input type="submit" value="Submit Application" class="submitBtn">
+
+            
+
+            </form>
+            <div id="join-table">
+                <table>
+                    
+                    <thead>
+                    <tr>
+                        <th colspan="5" scope = "colgroup">
+                            Galveston Chamber Membership Levels</th>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <th scope = "col">Listing in Directory</th>
+                        <th scope = "col">Complimentary Advertising</th>
+                        <th scope = "col">Voting Rights</th>
+                        <th scope = "col">Price</th>
+                    </tr>
+                </thead>    
+                <tbody>
+                    <tr>
+                        
+                        <th scope = "row">Non-Profit</th>
+                        <td>✔</td>
+                        <td>2 x year - email blast</td>
+                        <td>✖</td>
+                        <td>Free</td>
+                    </tr>
+
+                    <tr>
+                        <th scope = "row">Bronze</th>
+                        <td>✔</td>
+                        <td>Spotlight feature 1 x year</td>
+                        <td>✖</td>
+                        <td>$375</td>
+                    </tr>  
+
+                    <tr>
+                        <th scope = "row">Silver</th>
+                        <td>✔</td>
+                        <td>Spotlight feature 2 x year</td>
+                        <td>✔</td>
+                        <td>$650</td>
+                    </tr>
+
+                    <tr>
+                        <th scope = "row">Gold</th>
+                        <td>✔</td>
+                        <td>Featured Spotlight each Quarter</td>
+                        <td>✔</td>
+                        <td>$1200</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+ 
+    
+
+        </section>
+    </main>
+    <footer>
+    
+        <img src="images/chamber-logo.webp" alt="chamber logo">
+        <div id="footer1">
+        <p>Galveston Chamber of Commerce<br>
+          2228 Mechanic St #101<br>
+           Galveston, TX 77550</p>
+        </div>
+        <div id="footer2">
+           <p>info@galvestonchamber.org</p>
+           <p>(409)763-5326</p>
+           <p><a href="https://goo.gl/maps/8hFafTTmRtQU7yYq5">📍 Location Map</a></p>
+        </div>
+      <div id="footer3">
+        <br>
+        <p>&copy;<span id="copyyear"></span> |  Galveston Chamber  | Lisa Fell | WDD 230 Project </p>
+        <p>Last update:  <span id="lastupdate"></span></p>
+      </div>
+      </footer>
+   
+
+      <script src="scripts/main.js"></script>
+      <script src="scripts/hiddenDate.js"></script>
+      
+      
+    </body>
+  </html>

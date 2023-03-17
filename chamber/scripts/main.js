@@ -47,3 +47,38 @@ function hideAnnouncement(){
 }
 
 
+// if (document.location.pathname.includes('discover.html')){
+
+// initialize display elements
+/* const todayDisplay = document.querySelector("#today");
+const visitsDisplay = document.querySelector("#visits");
+
+const daysSinceDisplay = document.getElementById("daysSince");
+// get the stored value in local storage
+let numVisits = Number(window.localStorage.getItem("visits-ls"));
+let lastVisit = Number(window.localStorage.getItem("lastVisitDate"));
+
+// determine if this is the first visit
+if (numVisits !== 0) {
+	visitsDisplay.textContent = numVisits
+}else {
+	visitsDisplay.textContent = "This is your first visit!";
+}
+// increment the number of visits
+numVisits++;
+
+//store the new number of visits value
+localStorage.setItem("visits-ls", numVisits);
+
+let daysSince = (Date.now() - lastVisit)/86400000;
+localStorage.setItem("visits-ls", numVisits);
+localStorage.setItem("lastVisitDate", Date.now());
+
+let rounded = Math.round(daysSince);
+if (rounded !==0){
+	daysSinceDisplay.textContent= rounded;
+}else{
+	daysSinceDisplay.textContent = "It hasn't been a day yet";
+} */
+
+

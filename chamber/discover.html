@@ -17,6 +17,15 @@
     
   </head>
   <body>
+    <div class="banner">
+      <div class="bannerContent">
+        <div class="bannerText">
+          <p>🤝Come join us for the Chamber Meet & Greet Wednesday at 7:00pm</p>
+        </div>
+        <button class="bannerClose" onclick="hideAnnouncement()"> ✖
+        </button>
+      </div>
+    </div>
     <header>
             <picture>
               <img src="images/chamber-logo.webp" alt="chamber logo">
@@ -32,8 +41,13 @@
           <div class="fa">
               
                
-                <a href="https://facebook.com" class="fa fa-facebook"></a>
-                <a href="https://twitter.com" class="fa fa-twitter"></a>
+            <a href="https://facebook.com" class="fa fa-facebook" aria-hidden="true">
+              <span class="sr-only">Facebook</span>
+            </a>
+            <a href="https://twitter.com" class="fa fa-twitter" aria-hidden="true">
+              <span class="sr-only">Twitter</span>
+      
+            </a>
           
           
               
@@ -45,8 +59,8 @@
                 <li><a href="#" onclick="toggleMenu()">&#9776;</a></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
-                <li><a href="#">Members</a></li>
-                <li><a href="#">Local Events</a></li>
+                <li><a href="join.html">Become a Member</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="#">Weather</a></li>
           
               </ul>
@@ -56,14 +70,26 @@
         
       
       <main>
-      
-        <h2 id="h2discover">Discover Galveston</h2>
         <section id="discover">
-    <div>
+        <h2 id="h2discover">Discover What is Happening in Galvseton Texas</h2>
+        <div id="visits">
+          <p>
+            <span class="label">Number of Visits: </span>
+          
+            <span id="visits"></span>
+          </p>
+         
+          <p>
+            <span class="label">Days Since Last Visit: </span>
+            <span id="daysBetween">Less than a day</span>
+          </p>
+        </div>
+        
+    <div class="discoverpic">
         <picture>
 
           <img src="images/moody-gardens.jpg" alt="Moody Gardens" width="600" height="400">
-        
+          
         </picture>
         <p>Moody Gardens® began in the mid-1980s with a horse barn, a riding arena with a hippotherapy riding program for people with head injuries 
           and an extraordinary vision to create an island tourist destination. Today Moody Gardens® is one of the premier 
@@ -74,17 +100,17 @@
           numerous innovative and creative programs - resulting in a visitation count of approximately 2 million visitors annually.</p>
   </div>
 
-    <div>
+    <div class="discoverpic">
         <picture>
     
           <img src="images/pleasure-pier.jpg" alt="Pleasure Pier" width="600" height="400">
-
+          
         </picture>
         <p>The Pleasure Pier opened in May of 2012 to crowds of excited Galvestonians and tourists alike. This multi-million dollar family destination brings the glory of Galveston's famous history into the present with fun for young and old. Focused on waterfront fun and entertainment like no other Gulf Coast destination, the Pleasure Pier features family‐oriented attractions including 16 rides, 
           midway games, retail shops and a wide selection of food venues, including Texas’ first Bubba Gump Shrimp Co.</p>
     </div>
 
-    <div>
+    <div class="discoverpic">
         <picture>
           <img src="images/wind-surf.jpg" alt="Wind Surfing" width="600" height="400" loading="lazy">
         </picture>
@@ -93,8 +119,8 @@
           compared to 6.4 million visitors and $766 million in spending in 2015.</p>
     </div>
 
-    <div>
-        <picture class="discoverimg">
+    <div class="discoverpic">
+        <picture>
           <img src="images/jelly-fish.jpg" alt="random img4" width="600" height="400" loading="lazy">
         </picture>
         <p>Galveston Bay is home to a wide variety of animals that play an important role in the ecosystems. Shellfish, finfish and bird populations
@@ -103,7 +129,7 @@
           further losses. These declines could impact other species that depend on shellfish as a food source and as ecosystem engineers.</p>
   </div>
 
-  <div>
+  <div class="discoverpic">
         <picture>
           <img src="images/skate-beach.jpg" alt="Beach with skateboard" width="600" height="400" loading="lazy">
         </picture>
@@ -139,6 +165,7 @@
    
 
       <script src="scripts/main.js"></script>
+      
       
     </body>
   </html>

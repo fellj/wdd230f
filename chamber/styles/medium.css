@@ -98,7 +98,15 @@ main{
 
     /* discover page */
     #discover img:hover {
-        opacity: 0.5;
+        visibility: visible;
+        opacity: 0.7;
       }
-    
+   /* join page */
+    /* *******Join page******* */
+    #details{
+        width: 282px;
+    }
+    #join-main{
+        padding-top: 50px;
+    }
 }

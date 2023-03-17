@@ -12,7 +12,6 @@
 
   .bannerContent {
     padding: 16px;
-    /* max-width: 1000px; */
     margin:0 auto;
     display: flex;
     align-items: center;
@@ -42,10 +41,7 @@
 
   }
 
-  /* .heroImg{
-    width: 100%;
-    opacity: .4;
-  } */
+
   
 
 
@@ -109,11 +105,9 @@
     font-size: 1rem;
   }
   
-  /* .heroImg {
-    width: max-width;
-    height: auto;
-  } */
-
+  .heroImg {
+    opacity: .4;
+  }
   picture img{
     width: 100%;
     object-fit: cover;
@@ -167,6 +161,15 @@
     color: white;
   }
 
+  /*screen rader for social media */
+  .sr-only{
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+ }
 
 
 nav {
@@ -239,18 +242,24 @@ main section {
   max-height: 100%;
 }
 
+/*join now button */
 .join {
+  
   position: absolute;
 	top: 250px;
 	right: 50px;
-	background: #ffa62B;
+	background: #ffa62b;
+  /* background-color: #FFA62B80 */
   border:0;
   cursor: pointer;
   border: 1px solid rgba(0,0,0,.1);
 	padding: 1.5rem;
   text-align: center;
+  font-weight: 900;
   }
-
+section .join{
+  color: black;
+}
   #spotlights div {
     width: auto;
     max-width: 100%;
@@ -314,10 +323,12 @@ main section {
 
  button{
   border:none;
-  background-color: #ffa62B;
+  /* background-color: #ffa62B; */
+  background-color: #FFA62B80;
   font-family: 'Sofia Sans', sans-serif;
   font-weight: 900;
   cursor: pointer;
+
   
  }
  .button:hover {
@@ -328,7 +339,7 @@ main section {
   transform: scale(1.1);
 }
 
- /* discover page */
+ /********************discover page ****************************/
 
  #discover{
   display: flex;
@@ -336,17 +347,145 @@ main section {
   align-items: center;
   justify-content: center;
   grid-column: 2/4;
+  
  }
  #h2discover{
+  justify-content: center;
   text-align: center;
-  grid-column: 2/4;
-  padding: 10px;
-  /* margin-top: 10px; */
+  /* grid-column: 2/4;
+  padding: 10px; */
+  
 }
 
  #discover img:hover {
     opacity: 0.5;
   }
 
+  .discoverpic{
+    max-width: 600px;
+  }
+/* *******************Join Page****************** */
+#join-main h2{
+  text-align: center;
+  display: grid;
+  grid-column: 1/3;
+}
+form fieldset{
+  margin: 2rem 0;
+  border: 1px solid grey;
+  padding: .5rem 2% .5rem;
+  width: 300px;
+  background-color:#FFA62B20;
+  margin-left: auto;
+  margin-right: auto;
+}
+form legend{
+  color: black;
+  margin: 0 1rem;
+  padding:0 .5rem;
+}
+form label.applicant,form div{
+  display: block;
+  padding: 1rem ;
+  color: black;
+  font-size: 1rem;
+}
+form label.applicant input, form label.applicant select{
+  display: block;
+  font-size: 16px;
+  border: solid 1px #999;
+  padding: .75rem 0;
+  color: black;
+  width: 100%;
+  max-width: 20rem;
+  background-color: white ;
+}
+form label.mem-option{
+  display: block;
+  padding: .75rem 0;
+  color:black ;
+}
+
+input{
+  padding: 5px;
+}
+
+form input.submitBtn{
+  border: none;
+  background-color: #16697A;
+  color: white;
   
- 
+  padding: .75rem 1.5rem;
+  width: 96%;
+  max-width: 20rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+
+#moreInfo #details{
+  padding-right: 15px;
+  margin-right: 15px;
+}
+#join-form{
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+#join-table{
+  box-sizing: border-box;
+}
+table{
+  border: 2px grey solid;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tabletitle{
+  background-color:#16697A;
+  color: white;
+  padding: 20px;
+}
+caption {
+  display: none;
+}
+thead :first-child{
+  background-color: #16697A;
+  color: white;
+  font-size: larger;
+}
+
+thead:nth-child(2){
+  background-color:#82C0CC;
+}
+
+th{
+  font-size: smaller;
+}
+th{
+  background-color: #82C0CC;
+}
+
+
+/* zebra verigation*/
+tbody tr:nth-child(even){
+  background-color: white;
+}
+tbody tr:nth-child(odd){
+  background-color: #FFA62B20;
+}
+
+td{
+  text-align: center;
+  border: solid 1px grey;
+  font-size: smaller;
+  font-weight: 900;
+}
+
+tbody:first-child {
+  border: solid 1px grey;
+  background-color: #82C0CC;
+}

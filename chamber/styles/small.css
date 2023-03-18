@@ -295,6 +295,7 @@ section .join{
     background-color: #489FB5;
     padding: 1em;
     width: auto; 
+    text-align: center;
   }
   
 
@@ -306,6 +307,7 @@ section .join{
   
   #join {
     display: none;
+    text-align: center;
   }
   
 

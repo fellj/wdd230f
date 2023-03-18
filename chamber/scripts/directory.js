@@ -60,12 +60,17 @@ const displayBusinesses = (businesses) => {
         para1.innerHTML      += " <br> "
         para1.innerHTML      += `Membership Level: ${business.membershiplevel}`;
         para1.innerHTML      += " <br> "
-        // para1.innerHTML      += `<a href="${business.businessurl}" target="_blank"> Company Website</a>`;
-        para1.innerHTML      += `<a href="${business.businessurl}">Company Website</a>`;
+        para1.innerHTML      += `<a href="${business.businessurl}" target="_blank">Company Website</a>`;
+        
+        
 
         // Build the company url
-        url.setAttribute('href', business.businessurl);
-        url.setAttribute('target', "_blank");
+  /*       url.setAttribute('href', business.businessurl);
+        url.setAttribute('target', "_blank"); */
+
+        url.href = business.url;
+        url.title = business.url;
+        url.textContent = business.url;
 
         // Build the image portrait by setting all the relevant attributes
         logo.setAttribute('src', business.imageurl);

@@ -508,7 +508,7 @@ tbody:first-child {
   color: black;
   border: 1px solid grey;
   padding: 100px;
-  background-color:#16697A;
+  background-color:#82C0CC;
   justify-content: center;
   
   width: 100%;
@@ -516,6 +516,7 @@ tbody:first-child {
 }
 .cards section h3 {
   text-align:center;
+  font-size: larger;
 }
 
 /* main #directory {
@@ -523,7 +524,9 @@ tbody:first-child {
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 40px;
 } */
-
+p {
+  font-weight: 900;
+}
 section img {
   display: flex;
   justify-content: center;

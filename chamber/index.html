@@ -125,11 +125,16 @@
 </div>
 <div id="weather">
   <h2>Weather 🌡</h2>
-  <p>Sunny</p><span>🌞</span>
-  <p>Temperature: <span id="temp">42</span>&deg;F</p>
+  <!-- <p>Sunny</p><span>🌞</span> -->
+  <figure>
+    <img src="" alt="" id="weather-icon">
+    <figcaption></figcaption>
+  </figure>
+  
+  <p>Temperature: <span id="temp"></span>&deg;F</p>
   <p>Windchill: <span id="windchill"></span>&deg;F</p>
-  <p>Wind Speed: <span id="windspeed">15</span>mph</p>
-  <p>Humidity: 38%</p>
+  <p>Wind Speed: <span id="windspeed"></span>mph</p>
+  <!-- <p>Humidity: 38%</p> -->
 </div>
 <div id="news">
   <h2>Press Box 📰</h2>
@@ -200,6 +205,9 @@
     <br>
     <p>&copy;<span id="copyyear"></span> |  Galveston Chamber  | Lisa Fell | WDD 230 Project </p>
     <p>Last update:  <span id="lastupdate"></span></p>
+    <p>Weather Data Source: 
+      <a href="https://openweathermap.org/" target="blank">OpenWeatherMap.org</a>
+  </p>
   </div>
   </footer>
   <script src="scripts/main.js"></script>

@@ -257,6 +257,10 @@ main section {
   text-align: center;
   font-weight: 900;
   }
+
+  .join a{
+    color: black;
+  }
 section .join{
   color: black;
 }
@@ -560,4 +564,8 @@ section img {
 .list section:nth-child(even) {
 	background-color:#ffa62B20;
   color: black;
+}
+/* *************weather api************ */
+#weather-icon{
+  width: 20%;
 }

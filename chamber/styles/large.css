@@ -32,7 +32,7 @@ main{
   margin-top: 5px;
   margin-bottom: 5px;
   column-gap: 5px;
-  max-height: 3000px;
+  max-height: 4600px;
 }
 
 /* picture img{
@@ -163,4 +163,37 @@ th {
 th, td {
   padding: 7px 15px;
 }
+
+/* ***************directory******************** */
+.grid .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 5fr));
+}
+.card section {
+
+}
+/* .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 40px;
+} */
+/* .list {
+  justify-content: center;
+} */
+.list section {
+display: grid;
+grid-template-columns: 2fr 1fr 1fr;
+margin: 0;
+width: 100%;
+}
+
+#directory .list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(1250px, 1fr));
+  justify-content: center;
+  width: 100%; 
+}
+
+
+
 }

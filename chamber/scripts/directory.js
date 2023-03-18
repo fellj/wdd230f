@@ -1,5 +1,6 @@
 // Business Directory Data in JSON format
-const dataURL = "https://ellefell.github.io/wdd230/lesson09/data.json";
+const dataURL = "https://ellefell.github.io/wdd230/lesson9/data.json";
+
 
 
 const gridbutton = document.querySelector("#grid");

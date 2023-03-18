@@ -489,3 +489,31 @@ tbody:first-child {
   border: solid 1px grey;
   background-color: #82C0CC;
 }
+
+/* **********************directory page******************** */
+#directory{
+  max-height: 4000px;
+}
+section h2{
+  text-align: center;
+}
+.menu{
+  text-align: center;
+  justify-content: center;
+}
+.cards section{
+  color: black;
+  border: 1px solid grey;
+  padding: 100px;
+  background-color:#16697A;
+  justify-content: center;
+  box-shadow: grey;
+}
+.cards section h3 {
+  text-align:center;
+}
+
+section img {
+  display: flex;
+  justify-content: center;
+}

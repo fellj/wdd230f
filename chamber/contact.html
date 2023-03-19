@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Galveston Chamber of Commerce</title>
+    <meta name="description" content="Contact information for Galveston Chamber of Commerce">
+    <meta name="author" content="Lisa Fell">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Scope+One&family=Sofia+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+    
+  </head>
+  <body>
+  <div class="banner">
+    <div class="bannerContent">
+      <div class="bannerText">
+        <p>🤝Come join us for the Chamber Meet & Greet Wednesday at 7:00pm</p>
+      </div>
+      <button class="bannerClose" onclick="hideAnnouncement()"> ✖
+      </button>
+    </div>
+  </div>
+
+
+<header>
+  <picture>
+    <img src="images/chamber-logo.webp" alt="chamber logo">
+  </picture>
+  <section class="headings">
+
+    <h1>Galveston Chamber of Commerce</h1>
+
+    <p id="date"></p>
+    
+  </section>
+    
+<div class="fa">
+    
+     
+      <a href="https://facebook.com" class="fa fa-facebook" aria-hidden="true">
+        <span class="sr-only">Facebook</span>
+      </a>
+      <a href="https://twitter.com" class="fa fa-twitter" aria-hidden="true">
+        <span class="sr-only">Twitter</span>
+
+      </a>
+
+
+    
+  </div>
+     
+      
+  </header>
+  
+  
+  <nav>
+    <ul class ="navigation">
+      <li><a href="#" onclick="toggleMenu()">&#9776;</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="discover.html">Discover</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="join.html">Become a Member</a></li>
+      <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+  </nav>
+
+    <main>
+
+        
+       <section id="wrapper">
+            <form id="form" method="get">
+                <fieldset>
+                    <legend>Contact Form</legend>
+                    <label class="applicant">First Name*<input type="text" name="firstName" required></label>
+                    <label class="applicant">Last Name*<input type="text" name="lastName" required></label>
+                    <label class="applicant">Email*<input type="email" name="email" placeholder="yourname@email.com" required></label>
+                    
+                </fieldset>
+    
+                
+
+                <fieldset id="moreInfo">
+                    <legend>Question or Concern(s)</legend>
+                    
+                    <label for="details">Details</label>
+                    <textarea id="details" name="details" rows="15" cols="35"></textarea>
+                  
+                </fieldset>
+                
+                <input type="submit" value="Submit" class="submitBtn">
+            </form>
+
+            <div id="contactinfo">
+                <h2>CONTACT US</h2><br>
+                    <h3>Address</h3>
+                    <p>2228 Mechanic St #101<br>
+                        Galveston Island, TX 77550</p><br>
+                    <p>☎ <br>409.763.5326<br><br>
+                        ✉info@galvestonchamber.com</p>
+                    </div>
+                
+                        
+</section>
+
+    </main>
+
+
+  <footer>
+    
+    <img src="images/chamber-logo.webp" alt="chamber logo">
+    <div id="footer1">
+    <p>Galveston Chamber of Commerce<br>
+      2228 Mechanic St #101<br>
+       Galveston, TX 77550</p>
+    </div>
+    <div id="footer2">
+       <p>info@galvestonchamber.org</p>
+       <p>(409)763-5326</p>
+       <p><a href="https://goo.gl/maps/8hFafTTmRtQU7yYq5">📍 Location Map</a></p>
+    </div>
+  <div id="footer3">
+    <br>
+    <p>&copy;<span id="copyyear"></span> |  Galveston Chamber  | Lisa Fell | WDD 230 Project </p>
+    <p>Last update:  <span id="lastupdate"></span></p>
+    
+  
+  </div>
+  </footer>
+  <script src="scripts/main.js"></script>
+  
+  
+</body>
+</html>

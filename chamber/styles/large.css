@@ -169,9 +169,7 @@ th, td {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 5fr));
 }
-.card section {
 
-}
 /* .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -194,6 +192,13 @@ width: 100%;
   width: 100%; 
 }
 
-
+/* *************contact page********************* */
+#contactinfo{
+  border: 1px solid grey;
+  background-color:#FFA62B80;
+  margin: 200px;
+  padding: 50px;
+  grid-column: 2/4;
+}
 
 }

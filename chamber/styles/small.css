@@ -474,8 +474,14 @@ th{
 th{
   background-color: #82C0CC;
 }
-
-
+legend{
+  font-size: larger;
+  font-weight: 900;
+}
+label{
+  font-size: larger;
+  font-weight: 700;
+}
 /* zebra verigation*/
 tbody tr:nth-child(even){
   background-color: white;
@@ -570,4 +576,8 @@ section img {
 /* *************weather api************ */
 #weather-icon{
   width: 20%;
+}
+.businesses a{
+  color: black;
+  
 }

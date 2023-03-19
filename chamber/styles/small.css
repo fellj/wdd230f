@@ -582,3 +582,13 @@ section img {
   color: black;
   
 }
+/* **************contact us*************** */
+#contactinfo{
+  border: 1px solid grey;
+  background-color:#FFA62B80;
+  margin: 200px;
+  padding: 50px;
+  text-align: center;
+  
+  /* grid-column: 2/4; */
+}

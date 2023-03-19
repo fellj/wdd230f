@@ -110,6 +110,9 @@ height: auto;
     padding-left: 10%;
    
   }
+  #spotlights img{
+    width: 100;
+  }
 p{ 
   display: block;
 }

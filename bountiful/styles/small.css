@@ -6,6 +6,14 @@
 	box-sizing: border-box;
   }
 /*************Fonts****************/
-h1 h2 h3 {
-  font-family: ;  
+h1 {
+    font-family: 'Delicious Handrawn', cursive;
+    font-size: 10rem;
+}
+h2 h3 {
+    font-family: 'Delicious Handrawn', cursive;
+    font-size: 3rem;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
 }

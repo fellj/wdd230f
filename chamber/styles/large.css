@@ -27,7 +27,7 @@
 
 main{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
   grid-template-rows: 1fr 1fr 1fr;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -111,7 +111,7 @@ height: auto;
    
   }
   #spotlights img{
-    width: 100;
+    width: 100%;
   }
 p{ 
   display: block;
@@ -171,8 +171,24 @@ th, td {
 .grid .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 5fr));
+  gap: 10px;
 }
+/* .grid .cards {
+  width: 100%;
+  display: flex;
+  flex: 0 0 25%;
+  flex-direction: row;
 
+  gap: 10px;
+} */
+
+
+
+.cards{
+  width: 100%;
+  
+ 
+}
 /* .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -193,6 +209,7 @@ width: 100%;
   grid-template-columns: repeat(auto-fit, minmax(1250px, 1fr));
   justify-content: center;
   width: 100%; 
+  
 }
 
 /* *************contact page********************* */

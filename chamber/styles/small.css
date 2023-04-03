@@ -231,7 +231,6 @@ main section {
   background-color: #EDE7E3;
   margin: 1em;
   padding: .5em;
-  
 }
 
 
@@ -243,8 +242,7 @@ main section {
 }
 
 /*join now button */
-.join {
-  
+.join { 
   position: absolute;
 	top: 250px;
 	right: 50px;
@@ -299,8 +297,6 @@ section .join{
   }
   
 
-
-
   #spotlights :nth-child(3){
     display: none;
   }
@@ -310,11 +306,8 @@ section .join{
     text-align: center;
   }
   
-
-
  .responsive li {
   display: block;
-  
  }
 
  .responsive #menu::before {
@@ -334,13 +327,14 @@ section .join{
   font-family: 'Sofia Sans', sans-serif;
   font-weight: 900;
   cursor: pointer;
-
-  
+ 
  }
+
  .button:hover {
   background-color:#002ead;
   transition: 0.7s;
 }
+
 .bannerClose:hover{
   transform: scale(1.1);
 }
@@ -348,18 +342,21 @@ section .join{
  /********************discover page ****************************/
 
  #discover{
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
+  display: grid;
   grid-column: 2/4;
+  margin: 0 600px ;
   
  }
  #h2discover{
   justify-content: center;
   text-align: center;
-  /* grid-column: 2/4;
-  padding: 10px; */
+  padding: 20px;
+  /* grid-column: 2/4; */
+  /*padding: 10px; */
   
 }
 
@@ -396,6 +393,7 @@ form label.applicant,form div{
   color: black;
   font-size: 1rem;
 }
+
 form label.applicant input, form label.applicant select{
   display: block;
   font-size: 16px;
@@ -406,6 +404,7 @@ form label.applicant input, form label.applicant select{
   max-width: 20rem;
   background-color: white ;
 }
+
 form label.mem-option{
   display: block;
   padding: .75rem 0;
@@ -443,6 +442,7 @@ form input.submitBtn{
 #join-table{
   box-sizing: border-box;
 }
+
 table{
   border: 2px grey solid;
   border-collapse: collapse;
@@ -455,9 +455,11 @@ table{
   color: white;
   padding: 20px;
 }
+
 caption {
   display: none;
 }
+
 thead :first-child{
   background-color: #16697A;
   color: white;
@@ -471,13 +473,16 @@ thead:nth-child(2){
 th{
   font-size: smaller;
 }
+
 th{
   background-color: #82C0CC;
 }
+
 legend{
   font-size: larger;
   font-weight: 900;
 }
+
 label{
   font-size: larger;
   font-weight: 700;
@@ -503,9 +508,9 @@ tbody:first-child {
 }
 
 /* **********************directory page******************** */
-#directory{
+/* #directory{
   max-height: 4000px;
-}
+} */
 
 #directory a{
   color: black;
@@ -536,6 +541,13 @@ tbody:first-child {
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 40px;
 } */
+
+#directory h2 {
+  
+  text-align: center;
+  margin: 50px;
+}
+
 p {
   font-weight: 900;
 }
@@ -586,7 +598,7 @@ section img {
 #contactinfo{
   border: 1px solid grey;
   background-color:#FFA62B80;
-  margin: 200px;
+  margin: 20px;
   padding: 50px;
   text-align: center;
   

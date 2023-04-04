@@ -12,9 +12,18 @@ h1 {
     line-height: 0.9em;
 
 }
+
 h2 h3 {
     font-family: 'Delicious Handrawn', cursive;
     font-size: 3rem;
+}
+
+nav{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3rem; 
+}
+p {
+    font-family: 'Open Sans', sans-serif;
 }
 
 body, html {
@@ -64,4 +73,61 @@ body, html {
   
   .social img:hover {
     opacity: 0.7;
+  }
+
+  /***************Navigation******************/
+  #menu {
+	display: block;
+	font-size: 2rem;
+	font-weight:700;
+	text-decoration: none;
+	padding: .5rem .75rem;
+	background-color: #ff686b;
+	color: #000;
+}
+
+#menu::before {
+	content: "≡";
+}
+
+nav {
+	background-color: #ff686b;
+    
+}
+.navigation {
+	list-style: none;
+	margin: 0 auto;
+	max-width: 760px;
+}
+
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: black;
+	font-weight: 900;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover, navigation a:active {
+	color: #ff686b;
+	background-color: #d2d3ba;
+}
+
+.show li {
+	display: block;
+}
+
+#menu.show::before {
+	content: "X";
+}
+
+
+  footer{
+    text-align: center;
   }

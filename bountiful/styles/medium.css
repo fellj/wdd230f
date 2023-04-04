@@ -1,0 +1,25 @@
+@media only screen and (min-width: 35rem) {
+    h1 {
+        font-size: 10rem;
+        justify-content: center;
+    }
+.hero-text {
+    text-align: center;
+    position: absolute;
+    /* position: fixed; */
+    top: 57%;
+    left: 42%;
+    
+  }
+.hero-image{
+    height:80%;
+}
+  .social{
+    right: 30%;
+  }
+  .social img{
+    height: 85%;
+    
+}
+
+}

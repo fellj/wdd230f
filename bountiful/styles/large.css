@@ -1,0 +1,24 @@
+@media only screen and (min-width: 64rem) {
+/***************** Header******************/
+    h1 {
+        
+        font-size: 15rem;
+    }
+.hero-text {
+    text-align: left;
+    position: absolute;
+    /* position: fixed; */
+    top: 55%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+
+ .social{
+    right:10%;
+ } 
+.social img{
+    height: 100%;
+}
+}

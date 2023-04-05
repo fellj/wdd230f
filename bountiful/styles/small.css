@@ -173,6 +173,12 @@ nav {
   font-size: xx-large;
   text-align: center;
 }
+/************specials secion*************/
+#specials h3 {
+  font-family: 'Delicious Handrawn', cursive;
+    font-size: 3rem;
+    text-align: center;
+}
 
 /*******************about us*************/
 .container {

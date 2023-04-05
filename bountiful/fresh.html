@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
@@ -21,24 +22,34 @@
 
 
     <header>
+
+      <nav>
+        <ul class ="navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="fresh.html">Fresh</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="resources.html">Resources</a></li>
+    
+        </ul>
+      </nav>
   
         <div class="hero-image">
             <picture class="heroImg">
             <source
-            srcset="images/strawberryMED.jpg"
+            srcset="images/beet-smoothie.jpg"
             media="(min-width: 800px)"
             
           >
           <source
-            srcset="images/strawberrySMALL.jpg"
+            srcset="images/beet-smoothie.jpg"
             media="(min-width: 500px)"
             
           >
-            <img src="images/strawberry.jpg" alt="Single strawberry on a vine" width="1900" height="1080">
+            <img src="images/beet-smoothie.jpg" alt="Tall glass of beet juice" width="1900" height="1068">
         </picture>
             <div class="hero-text">
             
-                <h1>bountiful<br>foods</h1>
+                <h1>fresh</h1>
             </div>
             <div class="social">
     
@@ -58,106 +69,77 @@
 
   
   <a id="menu" href="index.html"></a>
-  <nav>
-    <ul class ="navigation">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="fresh.html">Fresh</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="resources.html">Resources</a></li>
-
-    </ul>
-  </nav>
+  
 
     <main>
-      
+      <h2>Build Your Own Drink</h2>
       
       
    
+      <!-- 📄 The Fresh page contains a form that allows the user to build their own specialty drink.
+      The form requires the following items from the user:
+      first name,
+      email,
+      phone number,
+      three (3) select element inputs that are populated with the available fruit to put into a drink.
+      Populate all three select elements with all of the available fruits.
+      Available fruit options must only come from this JSON data source for full credit consideration: Fruit DataLinks to an external site.
+      and, include an area that allows them to add special instructions, if needed.
+      Do NOT send the form to a new page upon form submission. Instead, use a JavaScript event handler to produce a formatted output area on this same page showing:
+      the input values of the order (7 inputs = first name, email, phone, three selected fruits, and special instructions),
+      the order date, and
+      the total amount of carbohydrates, protein, fat, sugar, and calories based upon the three fruit choices selected on the form. The data source provides that information per fruit.
 
+ -->
+ <section id="wrapper">
+  <form id="form" method="get" action="#">
+      <fieldset>
+          <legend>Order Information</legend>
+          <label class="customer">First Name*<input type="text" name="firstName" id="firstName" required></label>
+          <label class="customer">Phone*<input type="tel" name="phone" placeholder="1235551234" id="phone" required></label>
+          <label class="customer">Email*<input type="email" name="email" placeholder="yourname@email.com" id="email" required></label>
+      </fieldset>
 
-
-
-    <!-- <div class="heroImgHolder">
-      <picture class="heroImg">
-       
-        <img src="images/Galveston-Island-Hero.jpg" alt="Galveston Pleasure Pier at sunset">
-      </picture>    
-          <section class="join">
-            <h3>JOIN NOW</h3>
-            <button onclick="window.location.href='#';"></button>
-          </section>
-
-    </div> -->
       
-      
-<div id="event">  
 
-  <h2>Ribbon Cutting ✂</h2>
-  <h3>Island Vibes Nutrition</h3>
-  <p>Join us in celebrating our new location</p>
-  <p>Friday 3/1 | 4:00pm | Seawall & 45th</p>
-</div>
-<div id="weather">
-  <h2>Weather 🌡</h2>
-  <!-- <p>Sunny</p><span>🌞</span> -->
-  <figure>
-    <img src="" alt="" id="weather-icon">
-    <figcaption></figcaption>
-  </figure>
+  </article>
+      <fieldset>
+          <legend>Drink Options</legend>
+          <select id="fruit-dropdown" name="fruit">
+          </select>
+          
+          <select id="fruit-dropdown2" name="fruit">
+          </select>
+          
+          <select id="fruit-dropdown3" name="fruit">
+          </select>
+      </fieldset>
+
+      <fieldset id="moreInfo">
+          <legend>Special Instructions</legend>
+          
+          <label for="details">Details</label>
+          <textarea id="details" name="details" rows="5" cols="30"></textarea>
+        
+      </fieldset>
+      
+      <input type="submit" value="Place Your Order" class="submitBtn">
+      <button  onclick="displayOrder()">Submit</button> <br />
+      <span id="spanResult">
   
-  <p>Temperature: <span id="temp"></span>&deg;F</p>
-  <p>Windchill: <span id="windchill"></span>&deg;F</p>
-  <p>Wind Speed: <span id="windspeed"></span>mph</p>
-  <!-- <p>Humidity: 38%</p> -->
-</div>
-<div id="news">
-  <h2>Press Box 📰</h2>
-  <h3>178th Annual Chamber Celebtration</h3>
-  <p>The Galveston Chamber is proud to announce new additions to the entertainment lineup for this year's festival.</p>
+      </span>
 
-</div>
-<div id="join">
-  <h2>JOIN US!</h2>
-  <p>Discover how to join the Galveston Chamber and how it will benefit your organization.</p>
-</div>
-<section class="spotlight-events">
-<div id="spotlights">
-  <div class="businesses">
-    
-  </div>
 
-<!--   <div class="spotlight1">
-    <div class="picdiv">
-    <img class="spotlightpic" src="images/lemonade2.png" alt="lemons on a tree">
-    </div>
-    
-    <h3>
-      Youth Entreprenuership
-    </h3>
-    <p>Lemonade Day Galveston County</p>
-    <p>May 06 2023</p>
-  </div>
-  <div class="spotlight2">
-    <div class="picdiv">
-    <img class="spotlightpic" src="images/golf2.png" alt="golf ball on the green">
-  </div>
-    <h3>Golf Tournament</h3>
-    <p>24th Annual Golf Tournament</p>
-    <p>May 15 2023</p>
-    
-  </div>
-  <div id="spotlight3">
-    <div class="picdiv">
-    <img class="spotlightpic" src="images/women2.png" alt="woman sitting in a auditorium">
-  </div>
-    <h3>
-      Women's Conference
-    </h3>
-    <p>16th Annual Women's Conference</p>
-    <p>September 16 2023</p>
 
-  </div> -->
-</div>
+  
+
+  </form>
+
+
+
+      
+      
+
 </section>
 
 
@@ -187,7 +169,8 @@
   </div>
   </footer>
   <script src="scripts/main.js"></script>
-  <script src="scripts/weather.js"></script>
+  
+  <script src="scripts/fresh.js"></script>
   <!-- <script src="scripts/spotlight.js"></script> -->
 </body>
 </html>

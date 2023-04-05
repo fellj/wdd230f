@@ -21,4 +21,13 @@
 .social img{
     height: 100%;
 }
+
+#contactinfo{
+    display: flex;
+    flex-direction: row;
+}
+#map{
+    margin: 100px;
+    justify-content: left;
+}
 }

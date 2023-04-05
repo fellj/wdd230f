@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
-    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Open+Sans&family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
   </head>
@@ -21,7 +21,16 @@
 
 
     <header>
-  
+      <a id="menu" href="index.html"></a>
+      <nav>
+        <ul class ="navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="fresh.html">Fresh</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          
+        </ul>
+      </nav>
         <div class="hero-image">
             <picture class="heroImg">
             <source
@@ -34,12 +43,16 @@
             media="(min-width: 500px)"
             
           >
-            <img src="images/strawberry.jpg" alt="Single strawberry on a vine" width="1900" height="1080">
+            <img src="images/strawberry.jpg" alt="Single strawberry on a vine" width="1900" height="1069">
         </picture>
             <div class="hero-text">
             
                 <h1>bountiful<br>foods</h1>
+                <h2>better foods for better health</h2>
             </div>
+
+            
+
             <div class="social">
     
                 <a target="_blank" href="https://www.instagram.com/">
@@ -57,59 +70,73 @@
   </header>
 
   
-  <a id="menu" href="index.html"></a>
-  <nav>
+  
+<!--   <nav>
     <ul class ="navigation">
       <li><a href="index.html">Home</a></li>
       <li><a href="fresh.html">Fresh</a></li>
       <li><a href="about.html">About Us</a></li>
       <li><a href="resources.html">Resources</a></li>
-
+      
     </ul>
-  </nav>
-
+  </nav> -->
+  
     <main>
       
+      <section class="weather-container">
+      <div id="weather">
+        <h2>Current Weather Conditions</h2>
+        <figure>
+          <img src="" alt="" id="weather-icon">
+          <figcaption></figcaption>
+        </figure>
+        
+        <p>Temperature: <span id="temp"></span>&deg;F</p>
+
+        <p>Humidity: <span id="humidity"></span></p>
+      </div>
+      <br>
+      <hr>
+      <br>
+      <h3> 3-Day Temperature Outlook</h3>
+      <p>Day:<span id="dayOfWeek"></span> <span id="nextTemp"></span>&deg;F</p>
+      <p>Day:<span id="dayOfWeek"></span> <span id="nextTemp2"></span>&deg;F</p>
+      <p>Day:<span id="dayOfWeek"></span> <span id="nextTemp3"></span>&deg;F</p>
+      <div class="cards">
+        <!--<div class="grid">
+             Business card content here 
+        </div> -->
+        </div>
+
+    </section>
+    <div id="action-call">
+      <a href="fresh.html">
+      <h3>TRY ONE<br>ON US!</h3>
       
+      <div class="image-container">
+    <img id="redSmoothie" src="images/red-smoothie.png" alt="red smoothie" width="200" height="300">
+    </a>
+      </div>
       
-   
-
-
-
-
-    <!-- <div class="heroImgHolder">
-      <picture class="heroImg">
+    </div>
+    <div id="order-container">
+      <h3>Drinks on Order</h3>
+      <div id="drinks">
+        <p>
+          <p id="date"></p>
+          <span class="label">Current Order: </span>
+        
+          <span id="drinks"></span> Drinks
+        </p>
        
-        <img src="images/Galveston-Island-Hero.jpg" alt="Galveston Pleasure Pier at sunset">
-      </picture>    
-          <section class="join">
-            <h3>JOIN NOW</h3>
-            <button onclick="window.location.href='#';"></button>
-          </section>
-
-    </div> -->
+     
+        
+      </div>
+    </div>
+    
       
-      
-<div id="event">  
 
-  <h2>Ribbon Cutting ✂</h2>
-  <h3>Island Vibes Nutrition</h3>
-  <p>Join us in celebrating our new location</p>
-  <p>Friday 3/1 | 4:00pm | Seawall & 45th</p>
-</div>
-<div id="weather">
-  <h2>Weather 🌡</h2>
-  <!-- <p>Sunny</p><span>🌞</span> -->
-  <figure>
-    <img src="" alt="" id="weather-icon">
-    <figcaption></figcaption>
-  </figure>
-  
-  <p>Temperature: <span id="temp"></span>&deg;F</p>
-  <p>Windchill: <span id="windchill"></span>&deg;F</p>
-  <p>Wind Speed: <span id="windspeed"></span>mph</p>
-  <!-- <p>Humidity: 38%</p> -->
-</div>
+
 <div id="news">
   <h2>Press Box 📰</h2>
   <h3>178th Annual Chamber Celebtration</h3>
@@ -126,37 +153,7 @@
     
   </div>
 
-<!--   <div class="spotlight1">
-    <div class="picdiv">
-    <img class="spotlightpic" src="images/lemonade2.png" alt="lemons on a tree">
-    </div>
-    
-    <h3>
-      Youth Entreprenuership
-    </h3>
-    <p>Lemonade Day Galveston County</p>
-    <p>May 06 2023</p>
-  </div>
-  <div class="spotlight2">
-    <div class="picdiv">
-    <img class="spotlightpic" src="images/golf2.png" alt="golf ball on the green">
-  </div>
-    <h3>Golf Tournament</h3>
-    <p>24th Annual Golf Tournament</p>
-    <p>May 15 2023</p>
-    
-  </div>
-  <div id="spotlight3">
-    <div class="picdiv">
-    <img class="spotlightpic" src="images/women2.png" alt="woman sitting in a auditorium">
-  </div>
-    <h3>
-      Women's Conference
-    </h3>
-    <p>16th Annual Women's Conference</p>
-    <p>September 16 2023</p>
 
-  </div> -->
 </div>
 </section>
 

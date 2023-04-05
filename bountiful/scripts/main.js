@@ -14,15 +14,28 @@ hambutton.addEventListener('click', () => {
 	mainnav.classList.toggle('show');
 	hambutton.classList.toggle('show');
 });
-//takes the 0 index list item ("Menu") and toggles between displaying "menu" and not displaying "menu" (.classList & .toggle are keywords). class changes to "responsive when toggle is triggered."
-/* function toggleMenu() {
-	document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
-} */
 
-/* const mainnav = document.querySelector('.navigation')
-const hambutton = document.querySelector('#menu');
-
-hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false); */
 /* const date = new Date();
 const completeDate = new Intl.DateTimeFormat("en", { dateStyle: "full" }).format(date);
 document.querySelector("#date").innerText = completeDate; */
+
+// if (document.location.pathname.includes('fresh.html')){
+
+//initialize display elements
+
+// const drinksDisplay = document.querySelector("#drinks");
+
+// determine how many drinks
+
+// if (numDrinks !== 0) {
+// 	visitsDisplay.textContent = numVisits
+// }else {
+// 	drinksDisplay.textContent = "This is your first order!";
+// }
+// increment the number of visits
+// numDrinks++;
+
+//store the new number of visits value
+// localStorage.setItem("visits-ls", numDrinks);
+
+

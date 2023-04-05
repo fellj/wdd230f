@@ -13,7 +13,12 @@ h1 {
 
 }
 
-h2 h3 {
+h2 {
+  font-family: 'Delicious Handrawn', cursive;
+  font-size: 3rem;
+}
+
+h3 {
     font-family: 'Delicious Handrawn', cursive;
     font-size: 3rem;
 }
@@ -33,7 +38,6 @@ body, html {
 /* The hero image */
 .hero-image {
  
-
   /* Position and center the image to scale nicely on all screens */
   background-color: black;
   background-position: center;
@@ -55,6 +59,7 @@ body, html {
   margin: 70px;
 }
 
+
 .social {
     
     display: flex;
@@ -75,6 +80,8 @@ body, html {
     opacity: 0.7;
   }
 
+ 
+
   /***************Navigation******************/
   #menu {
 	display: block;
@@ -90,6 +97,10 @@ body, html {
 	content: "≡";
 }
 
+a{
+  color: inherit;
+  text-decoration: none;
+}
 nav {
 	background-color: #ff686b;
     
@@ -127,7 +138,140 @@ nav {
 	content: "X";
 }
 
+/**********************weather*********************/
 
+.weather-container{
+  margin: 5px;
+  border:3px solid #84dcc6;
+  border-radius: 15px;
+  padding: 15px;
+  max-width: fit-content;
+  text-align: center;
+}
+.weather-container h2, h3{
+  font-family: 'Roboto', sans-serif;
+  font-size: large;
+
+}
+
+/***********Call to action*******************/
+
+#action-call{
+/*   display: flex;
+  flex-direction: row; */
+  margin: 5px;
+  border:3px solid #84dcc6;
+  border-radius: 15px;
+  padding: 15px;
+  max-width: fit-content;
+  background-color:#d2d3ba;
+ 
+}
+#action-call h3 {
+  font-family: 'Delicious Handrawn', cursive;
+  font-weight: 900;
+  font-size: xx-large;
+  text-align: center;
+}
+
+/*******************about us*************/
+.container {
+  border:5px solid #84dcc6;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 15px;
+}
+#history h2{
+  text-align: center;
+  line-height: 2.5em;
+}
+#contactinfo{
+    border: 5px solid #84dcc6;
+   
+    margin: 20px;
+    padding: 50px;
+    text-align: center;
+    border-radius: 15px;
+  
+}
+#address{
+  margin: 100px;
+}
+#wrapper h2{
+  text-align: center;
+}
+/***********************fresh*****************************/
+form fieldset{
+  font-family: 'Open Sans', sans-serif;
+  margin: 2rem 0;
+  border: 1px solid grey;
+  padding: .5rem 2% .5rem;
+  width: 300px;
+  background-color: #D2d3Ba;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+}
+form legend{
+  color: black;
+  margin: 0 1rem;
+  padding:0 .5rem;
+
+}
+form label.customer,form div{
+  display: block;
+  padding: 1rem ;
+  color: black;
+  font-size: 1rem;
+}
+
+form label.customer input, form label.customer select{
+  display: block;
+  font-size: 16px;
+  border: solid 1px #999;
+  padding: 1rem 0;
+  color: black;
+  width: 100%;
+  max-width: 20rem;
+  background-color: white ;
+}
+
+
+
+input{
+  padding: 5px;
+}
+
+form input.submitBtn{
+  border: none;
+  background-color:#FFa69E;
+  color: black;
+  font-weight: 600;
+  border-radius: 15px;
+  padding: .75rem 1.5rem;
+  width: 96%;
+  max-width: 20rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  font-family: 'Open Sans', sans-serif;
+}
+#placeholder::placeholder {
+  padding-left: 10px;
+}
+
+#moreInfo #details{
+  padding-right: 20px;
+  margin-right: 20px;
+}
+
+
+
+/***********************footer***************************/
   footer{
     text-align: center;
+    background-color: #ff686b;
+    font-weight: 700;
+    padding: 20px;
   }

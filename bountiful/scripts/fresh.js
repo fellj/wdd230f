@@ -24,7 +24,7 @@ dropdown2.selectedIndex = 0;
 dropdown3.add(defaultOption3);
 dropdown3.selectedIndex = 0; 
 
-const urlFresh = "https://ellefell.github.io/wdd230/bountiful/data.json";
+const urlFresh = "https://fellj.github.io/wdd230f/bountiful/data.json";
 
 fetch(urlFresh)  
   .then(  
@@ -76,10 +76,15 @@ fetch(urlFresh)
 async function getFruitData() {
     const response = await fetch(urlFresh);
     const data = await response.json();
+
+    // Select three random fruits
+    //const inputFruits = getMultipleRandom(data, 3)
+
+
     displayOrder(data);
   }  
   
-  getFruitData();
+  //getFruitData();
   
 
 // Display the fetched json fruit data  
@@ -89,84 +94,90 @@ const displayOrder = (data) => {
     const fruits = document.querySelector('div.fruits'); // select the output container element
 
     // Create the order header elements
-    let para1           = document.createElement('p');
+    let para1           = document.getElementById('customer');
 
-    // Build the paragraph content with contact name and phone number
+    // Build the paragraph content with customer name, phone number, etc.
     para1.style.textAlign = "left";
-    para1.innerHTML       = `Customer Name: ${document.getElementById("firstName").innerHTML}`;
+    para1.innerHTML       = "<h2>Customer Order</h2><br><br>";
+    para1.innerHTML      += `<h3>Customer Name: </h3>${document.getElementById("firstName").value}`;
     para1.innerHTML      += " <br> "
-    para1.innerHTML       = `Customer Phone Number: ${document.getElementById("phone").innerHTML}`;
+    para1.innerHTML      += `<h3>Customer Phone Number: </h3>${document.getElementById("phone").value}`;
     para1.innerHTML      += " <br> "
-    para1.innerHTML      += `Customer Email Address: ${document.getElementById("email").innerHTML}`;
+    para1.innerHTML      += `<h3>Customer Email Address: </h3>${document.getElementById("email").value}`;
     para1.innerHTML      += " <br> "
-    para1.innerHTML      += `Special Instructions: ${document.getElementById("details").innerHTML}`;
+    para1.innerHTML      += `<h3>Special Instructions: </h3>${document.getElementById("details").value}`;
     para1.innerHTML      += " <br> "
+    para1.innerHTML      += " <hr> "
+    para1.innerHTML      += " <hr> "
+    para1.innerHTML      += " <br> "
+    para1.innerHTML      += " <h3> Selected fruits in drink include...</h3><br>"
+
+    fruits.appendChild(para1);
+
+    // Determine which fruits were selected
+    let f1 = document.getElementById("fruit-dropdown").value;
+    let f2 = document.getElementById("fruit-dropdown2").value;
+    let f3 = document.getElementById("fruit-dropdown3").value;
+
+    // Declare nutrition total variables
+    let totCarbs    = 0;
+    let totProteins = 0;
+    let totFats     = 0;
+    let totSugars   = 0;
+    let totCalories = 0;
 
     // For each loop that builds prophet cards
     data.forEach((fruit) => {
 
+      // Only build section if fruit name matches
+      // the selected option
+      if ([f1, f2, f3].includes(fruit.name)){
+
         // Create elements to add to the div.fruits element
         let fruitSection    = document.createElement('section');
-        let h3              = document.createElement('h3');
-        let h4              = document.createElement('h4');
-        let logo            = document.createElement('img');
-        
-        let url             = document.createElement('a');
+        let fruitTitle      = document.createElement('h3');
+        let br              = document.createElement('br');
 
-
-        // Build the h2 content out to show the company name
+        // Build the h2 content out to show the fruit name
         // Finish the template string
-        h3.textContent = `${fruit.name} `;
-        h4.textContent = `Carbohydrates: ${fruit.nutritions.carbohydrates}`;
+        fruitTitle.textContent = `${fruit.name}`;
+        totCarbs     += fruit.nutritions.carbohydrates;
+        totProteins  += fruit.nutritions.protein;
+        totFats      += fruit.nutritions.fat;
+        totSugars    += fruit.nutritions.sugar;
+        totCalories  += fruit.nutritions.calories;
 
-        
-     
-      
-
-
-        
-        
-        // Append the section(card) with the created elements
-        fruitSection.appendChild(h3);
-        fruitSection.appendChild(h4);
-        //fruitSection.appendChild(para1);
-        fruitSection.appendChild(url);
-        fruitSection.appendChild(logo);
-        
-        // Append the card to the cards output element
-        fruits.appendChild(para1);
+        // Append the section(fruit) with the created elements
+        fruitSection.appendChild(fruitTitle);
+        fruitSection.appendChild(br);
+       
+        // Append the fruitSection to the fruits output element
         fruits.appendChild(fruitSection);
 
+
+      }
+
+
         }) // end of forEach loop
+
+        // Add total elements to the order display
+        let para2 = document.getElementById('totals');
+
+        // Build the paragraph content with fruit drink totals
+        para2.style.textAlign = "left";
+        para2.innerHTML       = "<hr><h3>Nutrition Totals</h3><br><br>";
+        para2.innerHTML      += " <br> "
+        para2.innerHTML      += `Total Carbohydrates: ${Math.round(totCarbs)} monosaccharides`;
+        para2.innerHTML      += " <br> "
+        para2.innerHTML      += `Total Protein: ${Math.round(totProteins)} grams`;
+        para2.innerHTML      += " <br> "
+        para2.innerHTML      += `Total Fat: ${Math.round(totFats)} grams`;
+        para2.innerHTML      += " <br> "
+        para2.innerHTML      += `Total Sugar: ${Math.round(totSugars)} grams`;
+        para2.innerHTML      += " <br> "
+        para2.innerHTML      += `Total Calories: ${totCalories} <br><br><hr>`;
+
+        // Add totals to fruit section
+        fruits.appendChild(para2);
+
     }     // end of function expression
-
-  // Build the paragraph content with carbohydrates, protein, fat, sugar, and calories totaled
-/*   para1.style.textAlign = "center";
-  para1.innerHTML       = `Carbohydates: ${nutritions.carbohydrates}`;
-  para1.innerHTML      += `Protein: ${nutritions.protein}`;
-  para1.innerHTML      += `Fat: ${nutritions.fat}`;
-  para1.innerHTML      += `Sugar: ${nutritions.sugar}`;
-  para1.innerHTML      += `Calories ${nutritions.calories}`;
-
-  const submitBtn = document.querySelector("submitBtn");
-  const display = document.querySelector("article");
-
-  submitBtn.addEventListener("click", () => {
-  display.firstName;
-  display.phone;
-  display.email;
-  display.option.add(dropdown1);
-  display.option.add(dropdown2);
-  display.option.add(dropdown3); */
-/*   function displayOrder() {
-    const name = document.getElementById("firstName").value;          
-    let phone  = document.getElementById("phone").value;
-    let email  = document.getElementById("email").value;
-    let selection1 = document.getElementById("fruit-dropdown").value;
-    let selection2 = document.getElementById("fruit-dropdown2").value;
-    let selection3 = document.getElementById("fruit-dropdown3").value;
-
-    let result = ${name} ${phone} ${email}${selection1}${selection2}${selection3};
-    document.getElementById('spanResult').textContent = result; 
-}*/
-     

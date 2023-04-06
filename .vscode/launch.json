@@ -5,10 +5,17 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Launch Edge",
+            "request": "launch",
+            "type": "msedge",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Open bountiful foods",
             "type": "msedge",
             "request": "launch",
-            "name": "Open bountiful foods",
-            "file": "D:\\John\\Programming\\Websites\\wdd230f\\bountiful\\index.html"
+            "file": "c:\\Users\\John Fell\\Source\\Repos\\wdd230-projects\\wdd230f\\bountiful\\fresh.html"
         }
     ]
 }

@@ -91,6 +91,17 @@
       the total amount of carbohydrates, protein, fat, sugar, and calories based upon the three fruit choices selected on the form. The data source provides that information per fruit.
 
  -->
+ <section class="order-events">
+  <div id="order" style="width: 400px; position:absolute; right:10%;">
+    <p id="customer"></p>
+    <div class="fruits">
+      <!-- Place fruit information here -->
+    </div>
+    <p id="totals"></p>
+
+  </div>
+</section> 
+
  <section id="wrapper">
   <form id="form" method="get" action="#">
       <fieldset>
@@ -123,11 +134,11 @@
         
       </fieldset>
       
-      <input type="submit" value="Place Your Order" class="submitBtn">
-      <button  onclick="displayOrder()">Submit</button> <br />
-      <span id="spanResult">
+      <input type="button" value="Place Your Order" class="submitBtn" onclick="getFruitData()">
+      <br />
+<!--       <span id="spanResult">
   
-      </span>
+      </span> -->
 
 
 
@@ -142,14 +153,7 @@
 
 </section>
 
-<section class="order-events">
-  <div id="order">
-    <div class="fruits">
-      
-    </div>
-
-  </div>
-</section>  
+ 
 
 
 

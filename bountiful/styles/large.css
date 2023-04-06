@@ -44,4 +44,35 @@
 .special{
     padding:2px;
 }
+
+#order :nth-child(3){ 
+    display: block;
+    
+    } 
+    .order-events{
+      background-color: #FFA62B80 ;
+      grid-column: 4/5;
+      grid-row: 1/4;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      
+    }
+  
+     
+    #order {
+      flex-direction: column;
+      width:70%;
+      justify-content: center;
+      margin: 10px;
+      padding-left: 10%;
+     
+    }
+    #order img{
+      width: 100%;
+    }
+
 }

@@ -35,5 +35,18 @@
 #menu {
   display: none;
 }
+
+#orders {
+  display: flex;
+  flex-direction: row;
+  flex:1 1 100%;
+  justify-content: center;
+  
+}
+.spotlight1 .spotlight2 {
+  flex: 1 1 100%;
+  width: 50%;
+}
+
 }
 

@@ -76,69 +76,66 @@ fetch(urlFresh)
 async function getFruitData() {
     const response = await fetch(urlFresh);
     const data = await response.json();
-    displayOrder(data.fruits);
+    displayOrder(data);
   }  
   
   getFruitData();
   
 
-// Display the fetched json business data  
-const displayOrder = (businesses) => {
+// Display the fetched json fruit data  
+const displayOrder = (data) => {
 
-    // Create a placeholder for the output business cards container element
-    const cards = document.querySelector('div.cards'); // select the output container element
+    // Create a placeholder for the output fruit cards container element
+    const fruits = document.querySelector('div.fruits'); // select the output container element
+
+    // Create the order header elements
+    let para1           = document.createElement('p');
+
+    // Build the paragraph content with contact name and phone number
+    para1.style.textAlign = "left";
+    para1.innerHTML       = `Customer Name: ${document.getElementById("firstName").innerHTML}`;
+    para1.innerHTML      += " <br> "
+    para1.innerHTML       = `Customer Phone Number: ${document.getElementById("phone").innerHTML}`;
+    para1.innerHTML      += " <br> "
+    para1.innerHTML      += `Customer Email Address: ${document.getElementById("email").innerHTML}`;
+    para1.innerHTML      += " <br> "
+    para1.innerHTML      += `Special Instructions: ${document.getElementById("details").innerHTML}`;
+    para1.innerHTML      += " <br> "
 
     // For each loop that builds prophet cards
-    businesses.forEach((business) => {
+    data.forEach((fruit) => {
 
-        // Create elements to add to the div.cards element
-        let card     = document.createElement('section');
-        let h3       = document.createElement('h3');
-        let logo     = document.createElement('img');
-        let para1    = document.createElement('p');
-        let url      = document.createElement('a');
+        // Create elements to add to the div.fruits element
+        let fruitSection    = document.createElement('section');
+        let h3              = document.createElement('h3');
+        let h4              = document.createElement('h4');
+        let logo            = document.createElement('img');
+        
+        let url             = document.createElement('a');
 
 
         // Build the h2 content out to show the company name
         // Finish the template string
-        h3.textContent = `${business.companyname} `;
+        h3.textContent = `${fruit.name} `;
+        h4.textContent = `Carbohydrates: ${fruit.nutritions.carbohydrates}`;
 
-        // Build the paragraph content with contact name and phone number
-        para1.style.textAlign = "center";
-        para1.innerHTML       = `Contact Name: ${business.contactname}`;
-        para1.innerHTML      += " <br> "
-        para1.innerHTML      += `Phone Number: ${business.phone}`;
-        para1.innerHTML      += " <br> "
-        para1.innerHTML      += `Membership Level: ${business.membershiplevel}`;
-        para1.innerHTML      += " <br> "
-        para1.innerHTML      += `<a href="${business.businessurl}" target="_blank">Company Website</a>`;
         
-        
+     
+      
 
-        // Build the company url
-  /*       url.setAttribute('href', business.businessurl);
-        url.setAttribute('target', "_blank"); */
 
-        url.href = business.url;
-        url.title = business.url;
-        url.textContent = business.url;
-
-        // Build the image portrait by setting all the relevant attributes
-        logo.setAttribute('src', business.imageurl);
-        logo.setAttribute('alt', `Logo for ${business.companyname} `);
-        logo.setAttribute('loading', 'lazy');
-        logo.setAttribute('width', '250');
-        logo.setAttribute('height', '300');
         
         
         // Append the section(card) with the created elements
-        card.appendChild(h3);
-        card.appendChild(para1);
-        card.appendChild(url);
-        card.appendChild(logo);
+        fruitSection.appendChild(h3);
+        fruitSection.appendChild(h4);
+        //fruitSection.appendChild(para1);
+        fruitSection.appendChild(url);
+        fruitSection.appendChild(logo);
         
         // Append the card to the cards output element
-        cards.appendChild(card);
+        fruits.appendChild(para1);
+        fruits.appendChild(fruitSection);
 
         }) // end of forEach loop
     }     // end of function expression

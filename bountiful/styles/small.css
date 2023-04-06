@@ -281,3 +281,23 @@ form input.submitBtn{
     font-weight: 700;
     padding: 20px;
   }
+
+  #spotlights div {
+    width: auto;
+    max-width: 100%;
+    background-color: #489FB5;
+    padding: 1em;
+    margin:1em;
+    height: auto;
+    
+  }
+
+  #spotlights h2, h3{
+    color: black;
+    justify-items: center;
+    align-items: center;
+  }
+
+  #spotlights :nth-child(3){
+    display: none;
+  }
